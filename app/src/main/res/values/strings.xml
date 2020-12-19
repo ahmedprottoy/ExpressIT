@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ExpressIT</string>
-    <string name = "text_name">   EXPRESS IT !!!</string>
+    <string name="text_name">EXPRESS</string>
+    <string name="text_name2">IT !!!</string>
 </resources>
