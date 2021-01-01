@@ -47,7 +47,7 @@ public class Text_to_speech extends AppCompatActivity {
        btnspeak.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               speak() ;
+               speak();
            }
        });
     }
