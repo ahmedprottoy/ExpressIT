@@ -4,13 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".text_to_speech">
+    android:background="#252525"
+    tools:context=".Text_to_speech">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="220dp" />
+    <EditText
+        android:id="@+id/entertext"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="@string/edit_text"
+        android:textColor="#4A4949"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:text="Speak"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718"
+        android:background="@drawable/custom_edittext"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

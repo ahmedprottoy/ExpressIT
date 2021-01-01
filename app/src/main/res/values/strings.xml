@@ -4,4 +4,5 @@
     <string name="text_name2">IT !!!</string>
     <string name="button1">Text To Speech</string>
     <string name="button2">Speech To Text</string>
+    <string name="edit_text">   Enter Your Text</string>
 </resources>
