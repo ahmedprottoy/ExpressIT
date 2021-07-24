@@ -19,7 +19,6 @@ public class Speecch_to_text extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speecch_to_text);
-        //txvRslt = (TextView) findViewById(R.id.txvRslt);
 
     }
 
