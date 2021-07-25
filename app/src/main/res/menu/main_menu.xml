@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_outline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_outline_settings_24"
+            android:title="Settings">
+            <menu>
+                <item
+                    android:id="@+id/nav_vol"
+                    android:icon="@drawable/ic_outline_volume_up_24"
+                    android:title="Volume" />
+
+                <item
+                    android:id="@+id/nav_pitch"
+                    android:icon="@drawable/ic_outline_speed_24"
+                    android:title="Pitch" />
+            </menu>
+
+        </item>
+
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_outline_contact_support_24"
+            android:title="Contact" />
+
+    </group>
+</menu>

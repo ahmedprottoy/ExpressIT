@@ -5,4 +5,10 @@
     <string name="button1">Text To Speech</string>
     <string name="button2">Speech To Text</string>
     <string name="edit_text">   Enter Your Text</string>
+    <string name="set">Settings</string>
+    <string name="home">Home</string>
+    <string name="contact">Contact</string>
+    <string name="l_name">Express IT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_Close">Close navigation drawer</string>
 </resources>
