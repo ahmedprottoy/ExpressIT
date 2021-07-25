@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">ExpressIT</string>
-    <string name="text_name" translatable="false">EXPRESS</string>
-    <string name="text_name2" translatable="false">IT !!!</string>
-    <string name="button1" translatable="false">Text To Speech</string>
-    <string name="button2" translatable="false">Speech To Text</string>
-    <string name="edit_text" translatable="false">   Enter Your Text</string>
+  
+    <string name="app_name">ExpressIT</string>
+    <string name="text_name">EXPRESS</string>
+    <string name="text_name2">IT !!!</string>
+    <string name="button1">Text To Speech</string>
+    <string name="button2">Speech To Text</string>
+    <string name="edit_text">   Enter Your Text</string>
+    <string name="set">Settings</string>
+    <string name="home">Home</string>
+    <string name="contact">Contact</string>
+    <string name="l_name">Express IT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_Close">Close navigation drawer</string>
 </resources>

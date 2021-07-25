@@ -1,6 +1,7 @@
 package com.example.expressit;
 import android.content.ActivityNotFoundException;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
@@ -9,14 +10,15 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-public class Speecch_to_text extends AppCompatActivity{
-    private static final int REQUEST_CODE = 100;
-    private TextView textOutput;
+
+
+public class Speecch_to_text extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speecch_to_text);
+
         textOutput= (TextView) findViewById(R.id.textOutput);
 
     }
