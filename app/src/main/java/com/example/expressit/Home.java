@@ -1,12 +1,15 @@
 package com.example.expressit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -14,7 +17,7 @@ import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class Home extends AppCompatActivity {
+public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     Button btn1,btn2;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -33,9 +36,13 @@ public class Home extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
+        navigationView.bringToFront();
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_Close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(this);
 
         btn1 = findViewById(R.id.button1);
         btn2 = findViewById(R.id.button2);
@@ -52,6 +59,18 @@ public class Home extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
+
+    }
+
     public void openNewActivity(){
         Intent intent = new Intent(this,Text_to_speech.class);
         startActivity(intent);
@@ -60,5 +79,10 @@ public class Home extends AppCompatActivity {
     public void openNewActivity2(){
         Intent intent = new Intent(this,Speecch_to_text.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return true;
     }
 }
