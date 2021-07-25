@@ -14,11 +14,14 @@ import java.util.ArrayList;
 
 public class Speecch_to_text extends AppCompatActivity {
 
+
+    private static final int REQUEST_CODE = 100;
+    private TextView textOutput;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speecch_to_text);
-
         textOutput= (TextView) findViewById(R.id.textOutput);
 
     }
@@ -30,7 +33,7 @@ public class Speecch_to_text extends AppCompatActivity {
 
         try {
             startActivityForResult(intent, REQUEST_CODE);
-        } catch (ActivityNotFoundException ignored) {
+        } catch (ActivityNotFoundException a) {
 
         }
     }
@@ -39,11 +42,15 @@ public class Speecch_to_text extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == REQUEST_CODE) {
-            if (resultCode == RESULT_OK && null != data) {
-                ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                textOutput.setText(result.get(0));
+        switch (requestCode) {
+            case REQUEST_CODE: {
+                if (resultCode == RESULT_OK && null != data) {
+                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    textOutput.setText(result.get(0));
+                }
+                break;
             }
+
         }
     }
 }
