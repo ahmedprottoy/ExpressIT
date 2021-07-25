@@ -1,8 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ExpressIT</string>
-    <string name="text_name">EXPRESS</string>
-    <string name="text_name2">IT !!!</string>
-    <string name="button1">Text To Speech</string>
-    <string name="button2">Speech To Text</string>
-    <string name="edit_text">   Enter Your Text</string>
+    <string name="app_name" translatable="false">ExpressIT</string>
+    <string name="text_name" translatable="false">EXPRESS</string>
+    <string name="text_name2" translatable="false">IT !!!</string>
+    <string name="button1" translatable="false">Text To Speech</string>
+    <string name="button2" translatable="false">Speech To Text</string>
+    <string name="edit_text" translatable="false">   Enter Your Text</string>
+
+
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="speech_prompt" translatable="false">Say something&#8230;</string>
+    <string name="speech_not_supported" translatable="false">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic" translatable="false">Tap on mic to speak</string>
 </resources>
