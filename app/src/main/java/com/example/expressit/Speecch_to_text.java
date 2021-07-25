@@ -28,7 +28,7 @@ public class Speecch_to_text extends AppCompatActivity{
 
         try {
             startActivityForResult(intent, REQUEST_CODE);
-        } catch (ActivityNotFoundException a) {
+        } catch (ActivityNotFoundException ignored) {
 
         }
     }
@@ -37,15 +37,11 @@ public class Speecch_to_text extends AppCompatActivity{
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        switch (requestCode) {
-            case REQUEST_CODE: {
-                if (resultCode == RESULT_OK && null != data) {
-                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    textOutput.setText(result.get(0));
-                }
-                break;
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK && null != data) {
+                ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                textOutput.setText(result.get(0));
             }
-
         }
     }
 }
