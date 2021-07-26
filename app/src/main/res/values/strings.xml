@@ -14,10 +14,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_Close">Close navigation drawer</string>
     <string name="about">There are many people that suffer from hearing and speaking disabilities and there occurs communication barriers.They can only communicate in sign language but most of us dont know how to speak in sign language.And that\'s why they often feel distant. So, we are trying to build an app that\'s sole purpose is to remove this barrier.
-
-\n \nHow do we do that? Well, this app will have two significant parts. One is for the people with hearing disabilities- when they are trying to talk to other person ,they just need to open the app,tap and hold the mic sign and let the other person speak and what they said will be shown on the screen.
-
 \n\nHow do we do that? Well, this app will have two significant parts. One is for the people with hearing disabilities- when they are trying to talk to other person ,they just need to open the app,tap and hold the mic sign and let the other person speak and what they said will be shown on the screen.
-
 \n\nAnd the other part is for people with Speaking disabilities- while communicating with others they just simply have to open the app and type what they want to say and that will come out as a speech.</string>
+
+    <string name="contact2">Developed By:\n\t 1.Rumman Ahmed Prottoy\n\t Department of SWE,SUST.\n\t  Mail: pahmed@gmail.com\n\t  Contact Number: 01823945566\n\t  2. Maruf Hossain\n\t  Department of SWE,SUST.\n\t  Mail: mpulok@gmail.com\n\t  Contact Number: 01982734302\n\t</string>
 </resources>
