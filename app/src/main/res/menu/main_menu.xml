@@ -6,25 +6,12 @@
             android:icon="@drawable/ic_outline_home_24"
             android:title="Home" />
 
+
         <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_outline_settings_24"
-            android:title="Settings">
-            <menu>
-                <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/nav_vol"
-                    android:icon="@drawable/ic_outline_volume_up_24"
-                    android:title="Volume" />
+            android:id="@+id/nav_aboout"
+            android:icon="@drawable/ic_outline_error_outline_24"
+            android:title="About This App" />
 
-                <item
-                    android:id="@+id/nav_pitch"
-                    android:icon="@drawable/ic_outline_speed_24"
-                    android:title="Pitch" />
-                </group>
-            </menu>
-
-        </item>
 
 
         <item
