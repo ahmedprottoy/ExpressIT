@@ -18,7 +18,7 @@ import android.widget.Button;
 import com.google.android.material.navigation.NavigationView;
 
 public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    Button btn1,btn2;
+    Button btn1, btn2;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
@@ -27,7 +27,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -38,7 +38,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
         navigationView.bringToFront();
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_Close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_Close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -62,27 +62,27 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
     @Override
     public void onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
-        }
-        else{
+        } else {
             super.onBackPressed();
         }
 
     }
 
-    public void openNewActivity(){
-        Intent intent = new Intent(this,Text_to_speech.class);
+    public void openNewActivity() {
+        Intent intent = new Intent(this, Text_to_speech.class);
         startActivity(intent);
     }
 
-    public void openNewActivity2(){
-        Intent intent = new Intent(this,Speecch_to_text.class);
+    public void openNewActivity2() {
+        Intent intent = new Intent(this, Speecch_to_text.class);
         startActivity(intent);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
         return true;
     }
 }

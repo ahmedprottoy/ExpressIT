@@ -27,8 +27,10 @@
 
     <Button
         android:id="@+id/button"
+
         android:layout_width="127dp"
         android:layout_height="46dp"
+        android:drawableLeft="@drawable/speaking"
         android:text="Speak"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +38,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.718"
         android:background="@drawable/custom_edittext"/>
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/settings"
+        android:text="Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.238" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
