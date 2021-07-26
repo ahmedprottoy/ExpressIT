@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".contact">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Demo"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

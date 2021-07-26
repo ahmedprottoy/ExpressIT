@@ -1,0 +1,17 @@
+Index: app/src/main/res/layout/activity_speecch_to_text.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <include\r\n        layout=\"@layout/toolbar\"\r\n        tools:layout_editor_absoluteX=\"8dp\"\r\n        tools:layout_editor_absoluteY=\"50dp\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textOutput\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_margin=\"55dp\"\r\n        android:layout_marginStart=\"8dp\"\r\n        android:layout_marginTop=\"84dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:text=\"\"\r\n        android:textColor=\"#000000\"\r\n        android:textSize=\"30sp\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"1.0\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/startDictation\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"58dp\"\r\n        android:layout_marginStart=\"8dp\"\r\n        android:layout_marginTop=\"260dp\"\r\n        android:layout_marginEnd=\"8dp\"\r\n        android:background=\"#4AC29A\"\r\n        android:onClick=\"onClick\"\r\n        android:text=\"Tap to speak\"\r\n        android:textColor=\"#ffffff\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.498\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/textOutput\"\r\n        tools:ignore=\"OnClick\" />\r\n\r\n    <androidx.constraintlayout.widget.Guideline\r\n        android:id=\"@+id/guideline2\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\"\r\n        app:layout_constraintGuide_begin=\"20dp\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_speecch_to_text.xml	(revision ef53e40b4e3a3d70e6a746e8eccb40e67e17082a)
++++ app/src/main/res/layout/activity_speecch_to_text.xml	(date 1627338559663)
+@@ -28,6 +28,7 @@
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+     <Button
++
+         android:id="@+id/startDictation"
+         android:layout_width="match_parent"
+         android:layout_height="58dp"
