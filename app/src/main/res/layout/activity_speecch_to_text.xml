@@ -28,9 +28,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:drawableLeft="@drawable/mic"
         android:id="@+id/startDictation"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
+
+        android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="260dp"
         android:layout_marginEnd="8dp"
