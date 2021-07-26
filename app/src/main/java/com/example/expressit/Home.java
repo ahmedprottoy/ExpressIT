@@ -7,6 +7,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -81,8 +82,24 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         startActivity(intent);
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.nav_home:
+                break;
+            case R.id.nav_aboout:
+                Intent intent = new Intent (Home.this,about.class);
+                startActivity(intent);
+                break;
+
+            case R.id.nav_contact:
+                Intent intent2 = new Intent (Home.this,contact.class);
+                startActivity(intent2);
+                break;
+
+        }
         return true;
     }
 }
