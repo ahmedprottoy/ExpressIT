@@ -20,25 +20,45 @@
         app:menu="@menu/main_menu"
         android:layout_gravity="start"
         tools:ignore="MissingClass">
-
     </com.google.android.material.navigation.NavigationView>
 
 
 
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#252525">
+        <include layout="@layout/toolbar" />
 
-        <include layout="@layout/toolbar"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="260dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/button2"
+            android:textColor="#757577"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
 
         <Button
             android:id="@+id/button1"
             android:layout_width="260dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="150dp"
             android:background="@drawable/custom_button"
             android:text="@string/button1"
             android:textColor="#757577"
@@ -51,23 +71,10 @@
             app:layout_constraintVertical_bias="0.454"
             tools:ignore="DuplicateIds" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="260dp"
-            android:layout_height="60dp"
-            android:background="@drawable/custom_button"
-            android:text="@string/button2"
-            android:textColor="#757577"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.555" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

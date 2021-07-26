@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.Locale;
 
@@ -21,7 +22,17 @@ public class Text_to_speech extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_to_speech);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        //getSupportActionBar().setTitle("Ygyg");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
 
         btnspeak = findViewById(R.id.button);
         editbox = findViewById(R.id.entertext);
@@ -51,6 +62,9 @@ public class Text_to_speech extends AppCompatActivity {
            }
        });
     }
+
+
+
     private void speak() {
         String text = editbox.getText().toString();
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);

@@ -1,10 +1,12 @@
 package com.example.expressit;
 import android.content.ActivityNotFoundException;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.view.View;
 
@@ -22,8 +24,15 @@ public class Speecch_to_text extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speecch_to_text);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         textOutput= (TextView) findViewById(R.id.textOutput);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+       //getSupportActionBar().setTitle("Ygyg");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
 
