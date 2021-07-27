@@ -8,14 +8,16 @@ import android.os.Handler;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private final int SPLASH_DISPLAY_LENGTH = 5000;
 
-    Animation ExAnim,ItAnim;
+    Animation ExAnim,ItAnim,SkAnim,MicAnim;
     TextView txt1,txt2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +26,15 @@ public class MainActivity extends AppCompatActivity {
         ExAnim = AnimationUtils.loadAnimation(this,R.anim.express_animation);
         ItAnim = AnimationUtils.loadAnimation(this,R.anim.it_animation);
 
+
+
         txt1 = findViewById(R.id.textView);
         txt2 = findViewById(R.id.textView2);
 
+
         txt1.setAnimation(ExAnim);
         txt2.setAnimation(ItAnim);
+
 
         new Handler().postDelayed(new Runnable(){
             @Override
