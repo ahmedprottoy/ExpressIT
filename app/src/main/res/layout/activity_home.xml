@@ -15,7 +15,7 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="#252525"
+        android:background="#fff"
         app:headerLayout="@layout/header"
         app:menu="@menu/main_menu"
         android:layout_gravity="start"
@@ -29,21 +29,23 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#252525">
+        android:background="#fff">
         <include layout="@layout/toolbar" />
 
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="260dp"
+            android:layout_width="230dp"
             android:layout_height="58dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="450dp"
             android:layout_marginRight="70dp"
             android:background="@drawable/custom_button"
             android:text="@string/button2"
             android:textColor="#757577"
-            android:textSize="20sp"
+            android:fontFamily="@font/bangers"
+            android:textAlignment="inherit"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
@@ -53,16 +55,18 @@
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="260dp"
+            android:layout_width="230dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="275dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="350dp"
             android:layout_marginRight="70dp"
             android:layout_marginBottom="150dp"
             android:background="@drawable/custom_button"
+            android:fontFamily="@font/bangers"
+            android:textAlignment="inherit"
             android:text="@string/button1"
             android:textColor="#757577"
-            android:textSize="20sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
