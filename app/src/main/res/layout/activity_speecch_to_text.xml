@@ -11,40 +11,77 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="50dp" />
 
-    <TextView
-        android:id="@+id/textOutput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="8dp"
-        android:text=""
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:drawableLeft="@drawable/mic"
-        android:id="@+id/startDictation"
+    <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-56dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="8dp"
-        android:background="#4AC29A"
-        android:onClick="onClick"
-        android:text="Tap to speak"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textOutput"
-        tools:ignore="OnClick" />
+        <TextView
+            android:id="@+id/textOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/bangers"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/startDictation"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginRight="138dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/mic"
+
+
+            android:onClick="onClick"
+
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textOutput"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="136dp"
+            android:layout_marginRight="136dp"
+            android:layout_marginBottom="236dp"
+            android:fontFamily="@font/bangers"
+            android:gravity="center_horizontal"
+            android:text="Tap to Speak"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.76"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

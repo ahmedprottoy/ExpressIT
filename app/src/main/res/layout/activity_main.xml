@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#252525"
+    android:background="#fff"
     tools:context=".MainActivity">
 
 
@@ -16,14 +16,15 @@
         android:gravity="center_horizontal"
         android:text="@string/text_name"
         android:textAlignment="center"
-        android:textColor="#757577"
+        android:textColor="#bcbcbc"
         android:textSize="70sp"
         app:fontFamily="@font/bangers"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -36,7 +37,7 @@
         android:gravity="center_horizontal"
         android:text="@string/text_name2"
         android:textAlignment="center"
-        android:textColor="#757577"
+        android:textColor="#bcbcbc"
         android:textSize="70sp"
         app:fontFamily="@font/bangers"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,5 +45,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
