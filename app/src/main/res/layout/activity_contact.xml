@@ -6,13 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".contact"
     android:background="#e6e6ea">
+    <include layout="@layout/toolbar" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bangers"
+        android:paddingLeft="30dp"
+        android:paddingTop="70dp"
+        android:paddingRight="15dp"
         android:text="@string/contact2"
         android:textSize="20sp"
-        android:layout_centerInParent="true"
+        app:fontFamily="@font/montserrat"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

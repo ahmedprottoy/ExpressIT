@@ -15,7 +15,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-56dp"
+        android:background="#fff"
+        tools:layout_editor_absoluteX="-64dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
@@ -37,21 +38,21 @@
 
         <Button
             android:id="@+id/startDictation"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="150dp"
+            android:layout_below="@+id/textOutput"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginStart="8dp"
-
-            android:layout_marginTop="256dp"
-            android:layout_marginEnd="138dp"
-            android:layout_marginRight="138dp"
+            android:layout_marginStart="142dp"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="187dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginRight="141dp"
             android:background="@drawable/custom_edittext"
             android:drawableLeft="@drawable/mic"
-
-
             android:onClick="onClick"
-
             android:textSize="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -62,12 +63,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/startDictation"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
+            android:layout_marginStart="141dp"
+            android:layout_marginLeft="141dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="136dp"
             android:layout_marginRight="136dp"
-            android:layout_marginBottom="236dp"
+            android:layout_marginBottom="205dp"
             android:fontFamily="@font/bangers"
             android:gravity="center_horizontal"
             android:text="Tap to Speak"

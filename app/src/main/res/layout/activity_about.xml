@@ -10,19 +10,25 @@
 
 
 
-
+    <include layout="@layout/toolbar" />
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about"
-        android:textSize="15sp"
-        android:textAlignment="inherit"
-        android:layout_centerInParent="true"
-        tools:ignore="MissingConstraints"
-        android:padding="10dp"/>
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/bangers"
+            android:paddingLeft="30dp"
+            android:paddingTop="70dp"
+            android:paddingRight="15dp"
+            android:text="@string/about"
+            android:textAlignment="inherit"
+            android:textSize="20sp"
+            app:fontFamily="@font/montserrat"
+            tools:ignore="MissingConstraints" />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
